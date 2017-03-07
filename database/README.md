@@ -47,3 +47,9 @@ index record
 - 删除
 
 《PHP核心技术与最佳实践》
+
+## Bugs
+
+### Permission Denied
+
+The directory of data file must be writable.
