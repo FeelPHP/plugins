@@ -84,3 +84,35 @@ $ redis-cli -h 127.0.0.1 -p 6379
 ```
 
 > value global unique
+
+## PHP Redis Extension
+
+```shell
+# show all installed extensions
+$ php -m
+
+# show php.ini
+$ php --ini
+
+# Pre
+$ wget https://codeload.github.com/phpredis/phpredis/zip/develop
+$ sudo apt-get install autoconf
+
+# unzip
+$ unzip phpredis-develop.zip
+
+$ cd phpredis-develop
+$ sudo phpize
+$ sudo ./configure
+$ sudo make
+$ sudo make install
+
+$ sudo vim /usr/local/lib/php.ini
+
+extension=redis.so
+
+# restart nginx
+$ sudo /etc/init.d/nginx stop
+$ sudo /etc/init.d/nginx start
+
+```
